@@ -1,0 +1,66 @@
+//& COLORS
+
+$clr-black:#000;
+$clr-white:#fff;
+
+$clr-grey-light-1:#f7f7f7;
+$clr-grey-light-2:#eee;
+
+$clr-grey-dark-1:#777;
+$clr-grey-dark-2:#999;
+$clr-grey-dark-3:#333;
+
+// $clr-primary:;
+// $clr-primary-light:;
+// $clr-primary-dark:;
+
+// $clr-secondary:;
+// $clr-secondary-light:;
+// $clr-secondary-dark:;
+
+// $clr-tertiary:;
+// $clr-tertiary-light:;
+// $clr-tertiary-dark:;
+
+
+
+
+//& GRID
+
+$grid-width:114rem;
+$gutter-vertical:8rem;
+$gutter-horizontal:6rem;
+
+
+
+
+//& FONTS
+
+// Text
+$fnt-small-1:1.2rem;
+$fnt-small-2:1.4rem;
+$fnt-default:1.6rem;
+$fnt-big-1:1.8rem;
+$fnt-big-2:2rem;
+$fnt-big-3:2.2rem;
+
+// Headings
+$fnt-head-1:6rem;
+$fnt-head-2:4rem;
+$fnt-head-3:2.5rem;
+$fnt-head-4:1.8rem;
+
+
+
+
+//& SHADOWS
+
+$box-shadow: 0 1rem 2rem rgba($clr-black, .2);
+$text-shadow: 0 .4rem .8rem rgba($clr-black, .15);
+
+
+
+//& OTHER
+
+$radius:3px;
+$transition:all .3s ease;
