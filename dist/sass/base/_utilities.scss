@@ -1,20 +1,6 @@
-//# clearfix
-.clearfix {
-    @include clearfix;
-}
+//# --- MARGINS --- //
 
-
-
-//# center-text
-.u-center-text {
-    text-align: center;
-}
-
-
-
-//# Margins
-
-//^ Generic
+//% Generic //
 
 .u-margin-small {
     margin: 1.5rem !important;
@@ -60,7 +46,7 @@
 
 
 
-//^ Bottom
+//%  Bottom //
 
 .u-margin-bottom-small {
     margin-bottom: 1.5rem !important;
@@ -107,7 +93,7 @@
 
 
 
-//^ Top
+//% Top //
 
 .u-margin-top-small {
     margin-top: 1.5rem !important;
@@ -151,3 +137,21 @@
 
     //$ ---- //
 }
+
+//# --- --- //
+
+
+//# --- OTHER --- //
+
+// clearfix
+.clearfix {
+    @include clearfix;
+}
+
+
+// center text
+.u-center-text {
+    text-align: center;
+}
+
+//# --- --- //

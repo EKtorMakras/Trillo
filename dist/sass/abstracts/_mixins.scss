@@ -1,9 +1,9 @@
-//& --- Center an element --- //
+//% --- Center an element --- //
 
-// Center with position
+// Center with position //
 
-@mixin center-pos($position) {
-    position: $position;
+@mixin center-pos {
+    position: absolute;
     text-align: center;
     top: 50%;
     left: 50%;
@@ -14,11 +14,10 @@
 
 
 
-// Center with flexbox
+// Center with flexbox //
 
-@mixin center-flex($direction) {
+@mixin center-flex {
     display: flex;
-    flex-direction: $direction;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -26,11 +25,37 @@
 
 // --- //
 
-//& --- --- //
 
 
-//  Clearfix //
+// Center with margins //
 
+@mixin center-mar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// --- //
+
+//% --- --- //
+
+
+
+//% --- Shadows --- //
+
+@mixin box-shadow ($blur, $op) {
+    box-shadow: 0 1rem $blur rgba($clr-black, $op);
+}
+
+@mixin text-shadow ($blur, $op) {
+    box-shadow: 0 .4rem $blur rgba($clr-black, $op);
+}
+
+//% --- --- //
+
+
+//% --- Other --- // 
+
+//Clearfix
 @mixin clearfix {
 
     &::after,
@@ -41,34 +66,17 @@
     }
 }
 
-// --- //
 
-
-// Transition
-
+//Transition
 @mixin transition($time, $function) {
     transition: all $time $function;
 }
 
-// --- //
+//% --- --- //
 
-
-// Shadows
-
-@mixin box-shadow ($blur, $op) {
-    box-shadow: 0 1rem $blur rgba($clr-black, $op);
-}
-
-@mixin text-shadow ($blur, $op) {
-    box-shadow: 0 .4rem $blur rgba($clr-black, $op);
-}
-
-// --- //
 
 
 //& ---------- Media Queries ---------- //
-
-
 
 //@ ----- All Widths ----- //
 
