@@ -1,56 +1,69 @@
 body {
-    font-family: "Lato", sans-serif;
+    font-family: $ff-primary;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.5;
+    font-size: $fnt-default;
+    overflow-x: hidden;
 }
 
 
-//# Headings
+//# -- Headings -- //
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: $spacing;
+    text-transform: uppercase;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
 
 .heading-primary {
-
     font-size: $fnt-head-1;
     font-weight: 100;
     color: #fff;
-    text-transform: uppercase;
 }
 
-.heading-secondary {
 
+.heading-secondary {
     font-size: $fnt-head-2;
     font-weight: 300;
     color: #fff;
-    text-transform: uppercase;
 }
 
 
 .heading-tertiary {
-
     font-size: $fnt-head-3;
     font-weight: 300;
     color: #fff;
-    text-transform: uppercase;
 }
 
-//#
+//# --- --- //
 
 
 
-//# Paragraphs
+//# --- Other --- //
 
-.paragraph {
-
+p {
+    margin-bottom: 1.25rem;
+    color: $clr-grey-5;
     font-size: $fnt-default;
 }
 
-//#
+ul {
+    list-style-type: none;
+}
 
-
-
-//# Links
 
 a {
     text-decoration: none;
 }
 
-//#
+img {
+    width: 100%;
+    display: block;
+}
+
+//# --- ---- //
