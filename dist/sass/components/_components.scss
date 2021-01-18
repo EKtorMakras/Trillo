@@ -1,0 +1,116 @@
+//` --- Buttons ---  //
+
+.btn {
+
+    //^ Generic buttons //
+
+    &,
+    &:link,
+    &:visited {
+        @include transition(.2s, ease);
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 1.5rem 4rem;
+
+        background-color: orangered;
+        color: #fff;
+
+        font-size: $fnt-default;
+        letter-spacing: $spacing;
+
+        border-radius: 20rem;
+        box-shadow: $light-shadow;
+        border: none;
+        cursor: pointer;
+    }
+
+    &:active,
+    &:focus {
+        // transform: translateY(1px);
+        background-color: red;
+        box-shadow: $box-shadow;
+        outline: none;
+    }
+}
+
+//` --- --- //
+
+
+
+//` --- Form---  //
+
+.search {
+
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: $clr-grey-light-2;
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 200px;
+        width: 85%;
+        margin-right: -3.5rem;
+        transition: $transition;
+
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: $clr-grey-light-3;
+        }
+
+        &:focus+.search__btn {
+            background-color: $clr-grey-light-3;
+        }
+
+
+        &::placeholder {
+            font-weight: 100;
+            color: $clr-grey-light-4;
+        }
+    }
+
+
+    &__btn {
+        border: none;
+        background-color: $clr-grey-light-2;
+        fill: $clr-grey-dark-3;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+//` --- --- //
+
+
+
+//` --- Form---  //
+//` --- --- //
+
+
+
+//` --- Form---  //
+//` --- --- //
+
+
+
+//` --- Form---  //
+//` --- --- //

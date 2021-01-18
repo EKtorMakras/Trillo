@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     font-size: $fnt-default;
-    overflow-x: hidden;
+    color: $clr-grey-dark-2;
 }
 
 
@@ -20,22 +20,28 @@ h4 {
 }
 
 
-.heading-primary {
+h1 {
     font-size: $fnt-head-1;
     font-weight: 100;
     color: #fff;
 }
 
 
-.heading-secondary {
+h2 {
     font-size: $fnt-head-2;
     font-weight: 300;
     color: #fff;
 }
 
 
-.heading-tertiary {
+h3 {
     font-size: $fnt-head-3;
+    font-weight: 300;
+    color: #fff;
+}
+
+h4 {
+    font-size: $fnt-head-4;
     font-weight: 300;
     color: #fff;
 }
@@ -48,7 +54,6 @@ h4 {
 
 p {
     margin-bottom: 1.25rem;
-    color: $clr-grey-5;
     font-size: $fnt-default;
 }
 

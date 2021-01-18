@@ -4,16 +4,17 @@ $clr-black:#000;
 $clr-white:#fff;
 
 
-
 //% Shades Of Grey //
 
 /* General ones */
-$clr-grey-light-1:#f7f7f7;
-$clr-grey-light-2:#eee;
+$clr-grey-light-1:#faf9f9;
+$clr-grey-light-2:#f4f2f2;
+$clr-grey-light-3:#f0eeee;
+$clr-grey-light-4:#ccc;
 
-$clr-grey-dark-1:#777;
-$clr-grey-dark-2:#999;
-$clr-grey-dark-3:#333;
+$clr-grey-dark-1:#333;
+$clr-grey-dark-2:#777;
+$clr-grey-dark-3:#999;
 
 
 /* darkest grey - used for headings */
@@ -36,9 +37,9 @@ $clr-grey-10: #f1f5f8;
 
 //%  Primary Color //
 
-// $clr-primary:;
-// $clr-primary-light:;
-// $clr-primary-dark:;
+$clr-primary:#eb2f64;
+$clr-primary-light:#FF3366;
+$clr-primary-dark:#BA265D;
 
 //% --- //
 
@@ -67,8 +68,11 @@ $clr-grey-10: #f1f5f8;
 //& --- GRID --- //
 
 $grid-width:114rem;
+$grid-width-small:50rem;
 $gutter-vertical:8rem;
+$gutter-vertical-small:6rem;
 $gutter-horizontal:6rem;
+
 
 //& ---- ---- //
 
@@ -93,7 +97,7 @@ $fnt-head-4:1.8rem;
 
 
 // Font Families
-$ff-primary: "Lato",
+$ff-primary: "Open Sans",
 sans-serif;
 
 //& ---- ---- //
@@ -106,7 +110,7 @@ $box-shadow: 0 1rem 2rem rgba($clr-black, .2);
 $text-shadow: 0 .4rem .8rem rgba($clr-black, .15);
 
 $light-shadow: 0 .7rem 1.5rem rgba($clr-black, 0.1);
-$dark-shadow: 0 .7rem 1.5rem rgba($clr-black, 0.2);
+$dark-shadow: 0 2rem 5rem rgba($clr-black, .3);
 
 //& ---- ---- //
 

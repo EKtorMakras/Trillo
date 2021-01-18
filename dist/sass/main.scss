@@ -14,13 +14,14 @@
 
 
 // Components
-@import "components/button";
+@import "components/components";
 
 // Layout
 @import "layout/nav";
 @import "layout/header";
 @import "layout/grid";
 @import "layout/footer";
+@import "layout/other";
 
 // Pages
 @import "pages/home";
