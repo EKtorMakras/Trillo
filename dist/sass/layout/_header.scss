@@ -15,4 +15,12 @@
         height: 3.3rem;
         margin-left: 2rem;
     }
+
+
+    //$ -- Media -- //
+    @include media-max($bp-smallest) {
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 14rem;
+    }
 }

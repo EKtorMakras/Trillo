@@ -7,6 +7,17 @@
     box-shadow: $dark-shadow;
 
     min-height: 50rem;
+
+
+    //$ -- Media -- //
+
+    @include media-max($bp-largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    //$ ---- //
 }
 
 //* --- --- //
@@ -16,7 +27,17 @@
 //* --- Content --- //
 
 .content {
+
     display: flex;
+
+
+    //$ -- Media -- //
+
+    @include media-max($bp-medium) {
+        flex-direction: column;
+    }
+
+    //$ ---- //
 }
 
 //* --- --- //
@@ -32,6 +53,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 //* --- --- //
@@ -42,10 +64,31 @@
 
 .main {
     background-color: #fff;
-    background-color: green;
-    height: 100rem;
 
     flex: 1;
+}
+
+//* --- --- //
+
+
+//* --- Detail --- //
+
+.detail {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem;
+    background-color: $clr-grey-light-1;
+    border-bottom: $border;
+
+
+    //$ -- Media -- //
+    @include media-max($bp-medium) {
+        padding: 2.7rem;
+    }
+
+    @include media-max($bp-small) {
+        flex-direction: column;
+    }
 }
 
 //* --- --- //

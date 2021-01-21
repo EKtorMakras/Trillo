@@ -104,7 +104,6 @@
 
 //@ ----- Custom Widths ----- //
 
-
 //# -- Breakpoint Choices --//
 
 // -- phone (0-600px)
@@ -167,6 +166,6 @@
 
 //$ -- Media -- //
 
-@include respond (tab-port) {}
+@include media-max(900px) {}
 
 //$ ---- //

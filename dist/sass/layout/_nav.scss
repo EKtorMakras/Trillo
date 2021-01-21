@@ -68,14 +68,39 @@
     &__list {
         font-size: $fnt-small-2;
         margin-top: 3.5rem;
+
+
+        //$ -- Media -- //
+        @include media-max($bp-medium) {
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
+        }
+
+
+
     }
 
     &__item {
+
         position: relative;
+        transition: $transition;
+
+        //$ -- Media -- //
+        @include media-max($bp-medium) {
+            flex: 1;
+        }
+
 
         &:not(:last-child) {
             margin-bottom: .5rem;
+
+            //$ -- Media -- //
+            @include media-max($bp-medium) {
+                margin-bottom: 0;
+            }
         }
+
 
         &::before {
             content: '';
@@ -87,7 +112,14 @@
             background-color: $clr-primary;
             transform: scaleY(0);
             transition: transform .2s ease-out, width .4s cubic-bezier(1, 0, 0, 1) .2s, background-color .1s;
+
+
+            //$ -- Media -- //
+            @include media-max($bp-medium) {
+                display: none;
+            }
         }
+
 
         &:hover::before,
         &--active::before {
@@ -95,9 +127,20 @@
             width: 100%;
         }
 
+
         &:active::before {
             background-color: $clr-primary-light;
         }
+
+
+        &:hover {
+
+            //$ -- Media -- //
+            @include media-max($bp-medium) {
+                background-color: $clr-primary;
+            }
+        }
+
     }
 
     &__link {
@@ -112,6 +155,19 @@
 
             display: flex;
             align-items: center;
+
+
+            //$ -- Media -- //
+            @include media-max($bp-medium) {
+                justify-content: center;
+                padding: 2.4rem;
+            }
+
+            @include media-max($bp-small) {
+                flex-direction: column;
+                align-items: center;
+                padding: 1.5rem .5rem;
+            }
         }
     }
 
@@ -120,18 +176,16 @@
         height: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+
+
+        //$ -- Media -- //
+        @include media-max($bp-small) {
+            margin-right: 0;
+            margin-bottom: .6rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
-
-    &__text {}
-
-
-}
-
-.legal-text {
-    font-size: $fnt-small-2;
-    color: $clr-grey-light-4;
-    text-align: center;
-    padding: 2.5rem;
 }
 
 //` --- --- //

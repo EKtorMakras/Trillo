@@ -90,9 +90,9 @@ $fnt-big-3:2.2rem;
 
 
 // Headings
-$fnt-head-1:6rem;
-$fnt-head-2:4rem;
-$fnt-head-3:2.5rem;
+$fnt-head-1:4rem;
+$fnt-head-2:3rem;
+$fnt-head-3:2.2rem;
 $fnt-head-4:1.8rem;
 
 
@@ -106,9 +106,10 @@ sans-serif;
 
 //& --- SHADOWS --- //
 
-$box-shadow: 0 1rem 2rem rgba($clr-black, .2);
+
 $text-shadow: 0 .4rem .8rem rgba($clr-black, .15);
 
+$shadow: 0 2rem 5rem rgba($clr-black, .1);
 $light-shadow: 0 .7rem 1.5rem rgba($clr-black, 0.1);
 $dark-shadow: 0 2rem 5rem rgba($clr-black, .3);
 
@@ -121,5 +122,22 @@ $dark-shadow: 0 2rem 5rem rgba($clr-black, .3);
 $spacing: 0.25rem;
 $radius:3px;
 $transition:all .3s ease;
+$border:1px solid $clr-grey-light-2;
+
+
+//# -- Breakpoint Choices --//
+
+$bp-largest:75em;
+$bp-large:68.75em;
+$bp-medium:56.25em;
+$bp-small:40.625em;
+$bp-smallest:31.25rem;
+
+//$ -- Media -- //
+@include media-max($bp-smallest) {}
+
+
+
+//# -- -- //
 
 //& ---- ---- //
